@@ -10,14 +10,14 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Meta Pixel Code (Standard PageView only, no button tracking) -->
+    <!-- Meta Pixel Code (Fixed) -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push(n.translated=false,n.version='2.0';
+        if(!f._fbq)f._fbq=n;n.push(n);n.loaded=!0;n.version='2.0';
         n.queue=[];t=b.createElement(e);t.async=!0;
-        src=v;s=b.getElementsByTagName(e)[0];
+        t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1407554831528447');
@@ -159,7 +159,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: id 10px;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -184,7 +184,7 @@
             padding: 12px;
             border-radius: 10px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 136, 0.05);
         }
 
         .feature-card h4 {
@@ -214,7 +214,6 @@
         
         <!-- Profile Image with Verified Badge -->
         <div class="profile-wrapper">
-            <!-- Yahan aap apna high quality profile image URL daal sakte hain -->
             <img src="https://raw.githubusercontent.com/onlinetipper/Vamika/83a2b8480e47d32ff5c8702d31ea9ade2d9feaf9/vamikaa.jpg" alt="Vamika Tips Logo" class="profile-img">
             <div class="verified-badge"><i class="fa-solid fa-check"></i></div>
         </div>
@@ -228,7 +227,7 @@
             <div class="highlight-item">
                 <i class="fa-solid fa-bolt"></i> 95% Match Prediction Accuracy
             </div>
-            <div class="highlight-item">
+            <div class="header-item highlight-item">
                 <i class="fa-solid fa-shield-halved"></i> 100% Safe & Trusted Sessions
             </div>
             <div class="highlight-item">
@@ -236,7 +235,7 @@
             </div>
         </div>
 
-        <!-- Join Button (No Tracking Events Attached) -->
+        <!-- Join Button -->
         <a href="https://t.me/+jW18oGtzX2M0NWQ1" class="cta-button" target="_blank">
             <i class="fa-brands fa-telegram"></i> Join Free Telegram Now
         </a>
